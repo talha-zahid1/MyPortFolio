@@ -6,7 +6,7 @@ import WeatherUI from "../assets/WeatherUI.png"
 import { motion } from "framer-motion";
 import Apisentinel from "../assets/Apisentinel.png"
 import TalentRankAI from "../assets/TalentRankAI.png"
-import Chatbot from "../assets/Chatbot.png"
+import chatbot from "../assets/chatbot.png"
 import placeslogo from '../assets/placeslogo.png'
 
 const item = {
@@ -91,7 +91,7 @@ const projects = [
       "A backend AI chatbot application built with Node.js, Express.js, and MySQL, focused on clean, scalable backend architecture, secure session-based authentication, and well-structured RESTful APIs. Every route is documented and thoroughly tested using a Postman Collection to ensure reliability and easy integration.",
     shortdescription:
       "A backend AI chatbot application built with Node.js, Express.js, and MySQL, featuring clean architecture, session-based authentication, and RESTful APIs fully documented and tested with Postman.",
-    image: Chatbot,
+    image: chatbot,
     tools: [7, 8, 9],
     liveLink: "",
     githubLink: "https://github.com/talha-zahid1/Chat_Bot_Ai.git",
