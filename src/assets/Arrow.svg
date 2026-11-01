@@ -1,0 +1,15 @@
+
+<svg width="119" height="72" viewBox="0 0 119 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  path {
+    stroke-width: 2;
+  }
+
+  @media (min-width: 768px) {
+    path {
+      stroke-width: 4;
+    }
+  }
+</style>
+<path d="M118.5 0.500011C78.5 2.50001 37.5 24.5 6.50002 62.5M5.50002 46.5C9.50002 47.1667 10.8333 49.5 9.50002 53.5L0.500015 71.5C7.16668 68.1667 14.5 65.5 22.5 63.5" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+</svg>
