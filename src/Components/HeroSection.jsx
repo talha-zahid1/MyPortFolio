@@ -27,20 +27,24 @@ const HeroSection = () => {
         <div className='w-full relative mt-5 md:mt-10'>
             <motion.h2
               initial="hidden"
-              animate="show"
+             whileInView="show"
+             viewport={{ once: false, amount: 0.2 }}
               className='font-hero tracking-wide  pr-8 md:pr-125 text-sm w-full md:text-3xl flex justify-end'>
                 Hello! I Am <span className='text-purple-600 pl-2'> Muhammad Talha</span>
             </motion.h2>
             <motion.img
               initial="hidden"
-              animate="show"
+             whileInView="show"
+             viewport={{ once: false, amount: 0.2 }}
               className='md:ml-168 ml-32 md:mt-2 h-[25px] w-[45px] md:h-[60px] md:w-[100px]' src={Arrow} alt="Arrow" />
             {/* Personel Info */}
            <div className='flex justify-center  pl-10  pr-8 '>
             {/* div1 */}
              <motion.div
                initial="hidden"
-               animate="show"
+             whileInView="show"
+             viewport={{ once: false, amount: 0.2 }}
+               
                className='relative md:mt-8 mt-4 ml-5 md:ml-115 md:h-[250px] md:w-[200px] h-[120px] w-[100px]'>
               
                 <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[160%] blur-2xl opacity-90 z-0 bg-[radial-gradient(circle,#d9c9f5_0%,#7c4dcc_20%,#3b1280_45%,transparent_70%)]'></div>
@@ -51,7 +55,8 @@ const HeroSection = () => {
             <motion.div
               variants={container}
               initial="hidden"
-              animate="show"
+             whileInView="show"
+             viewport={{ once: false, amount: 0.2 }}
               className='md:mt-8 flex-1 mt-4 ml-12 md:ml-26 md:mr-25 md:h-[250px] md:w-[550px] h-[120px] w-[140px] flex flex-col justify-center md:gap-4 '>
               <motion.p variants={item} className='font-hero text-xs md:text-4xl'>A Developer who</motion.p>
               <motion.h1 variants={item} className='font-hero text-lg md:text-6xl'>Codes both sides of the screen...</motion.h1>
