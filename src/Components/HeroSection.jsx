@@ -24,9 +24,9 @@ const HeroSection = () => {
       id="Home"
       className="relative overflow-x-clip text-white flex flex-col items-center flex-1 w-full bg-[#0f0518] px-4 md:px-8 py-6 md:py-12"
     >
-      <div className="w-full max-w-[1100px]">
+      <div className="w-full max-w-[860px] mx-auto">
         {/* Personal Info */}
-        <div className="flex items-center justify-start gap-4 md:gap-10 pt-14 md:pt-36">
+        <div className="flex items-center justify-start gap-6 md:gap-16 pt-14 md:pt-36">
           
           <motion.div
             initial="hidden"
@@ -56,12 +56,12 @@ const HeroSection = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.2 }}
-            className="flex flex-col justify-center gap-1 md:gap-4 flex-1 min-w-0"
+            className="flex flex-col justify-center gap-1 md:gap-4 flex-1 min-w-0 max-w-[560px]"
           >
             <motion.p variants={item} className="font-hero text-xs md:text-4xl">
               A Developer who
             </motion.p>
-            <motion.h1 variants={item} className="font-hero break-words text-lg md:text-6xl">
+            <motion.h1 variants={item} className="font-hero text-lg md:text-5xl lg:text-6xl break-words">
               Codes both sides of the screen...
             </motion.h1>
             <motion.p variants={item} className="font-hero text-xs md:text-4xl">
