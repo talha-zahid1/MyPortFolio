@@ -35,14 +35,14 @@ const HeroSection = () => {
             className="relative shrink-0 h-[120px] w-[100px] md:h-[270px] md:w-[220px]"
           >
             
-            <div className="absolute bottom-full left-0 w-full mb-1 md:mb-2 flex flex-col z-20">
-              <h2 className="whitespace-nowrap font-hero tracking-wide text-sm md:text-3xl">
+            <div className="absolute bottom-full left-0 w-full  md:mb-2 flex flex-col z-20">
+              <h2 className="whitespace-nowrap font-hero ml-[135%] tracking-wide text-sm md:text-3xl">
                 Hello! I Am <span className="text-purple-600 pl-2">Muhammad Talha</span>
               </h2>
               <img
                 src={Arrow}
                 alt="Arrow"
-                className="ml-[50%] mt-1 md:mt-2 h-[25px] w-[45px] md:h-[60px] md:w-[100px]"
+                className="ml-[80%] mb-[20%]  md:mt-2 h-[25px] w-[45px] md:h-[60px] md:w-[100px]"
               />
             </div>
 
