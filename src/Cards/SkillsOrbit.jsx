@@ -59,7 +59,7 @@ export default function SkillsOrbit() {
     >
       <svg
         viewBox="0 0 1000 420"
-        className="w-full md:w-[1000px] md:max-w-none mx-auto h-auto"
+        className="w-full max-w-[1000px] mx-auto h-auto"
         role="img"
         aria-label="Tech stack orbiting around my logo"
       >
