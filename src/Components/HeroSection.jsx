@@ -24,17 +24,17 @@ const HeroSection = () => {
       id="Home"
       className="relative overflow-x-clip text-white flex flex-col items-center flex-1 w-full bg-[#0f0518] px-4 md:px-8 py-6 md:py-12"
     >
-      <div className="w-full max-w-[860px]">
+      <div className="w-full max-w-[1100px]">
         {/* Personal Info */}
-        <div className="flex items-center justify-start gap-6 md:gap-16 pt-14 md:pt-36">
-          {/* Picture + Greeting + Arrow (sab picture ke relative) */}
+        <div className="flex items-center justify-start gap-4 md:gap-10 pt-14 md:pt-36">
+          
           <motion.div
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.2 }}
             className="relative shrink-0 h-[120px] w-[100px] md:h-[270px] md:w-[220px]"
           >
-            {/* Greeting + Arrow ek group: picture ke bilkul upar */}
+            
             <div className="absolute bottom-full left-0 w-full mb-1 md:mb-2 flex flex-col z-20">
               <h2 className="whitespace-nowrap font-hero tracking-wide text-sm md:text-3xl">
                 Hello! I Am <span className="text-purple-600 pl-2">Muhammad Talha</span>
@@ -50,18 +50,18 @@ const HeroSection = () => {
             <img src={Picture} className="relative z-10 w-full h-full object-cover" alt="profile" />
           </motion.div>
 
-          {/* Text + Buttons */}
+          
           <motion.div
             variants={container}
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.2 }}
-            className="flex flex-col justify-center gap-1 md:gap-4 flex-1 min-w-0 max-w-[560px]"
+            className="flex flex-col justify-center gap-1 md:gap-4 flex-1 min-w-0"
           >
             <motion.p variants={item} className="font-hero text-xs md:text-4xl">
               A Developer who
             </motion.p>
-            <motion.h1 variants={item} className="font-hero text-lg md:text-6xl">
+            <motion.h1 variants={item} className="font-hero break-words text-lg md:text-6xl">
               Codes both sides of the screen...
             </motion.h1>
             <motion.p variants={item} className="font-hero text-xs md:text-4xl">
