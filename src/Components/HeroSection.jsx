@@ -25,34 +25,25 @@ const HeroSection = () => {
       className="relative overflow-x-clip text-white flex flex-col items-center flex-1 w-full bg-[#0f0518] px-4 md:px-8 py-6 md:py-12"
     >
       <div className="w-full max-w-[860px]">
-        {/* Greeting + Arrow */}
-        <motion.h2
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.2 }}
-          className="font-hero tracking-wide text-sm md:text-3xl flex justify-start"
-        >
-          Hello! I Am <span className="text-purple-600 pl-2">Muhammad Talha</span>
-        </motion.h2>
-
-        <motion.img
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.2 }}
-          className="ml-[80px] md:ml-[215px] mt-1 md:mt-2 h-[25px] w-[45px] md:h-[60px] md:w-[100px]"
-          src={Arrow}
-          alt="Arrow"
-        />
-
         {/* Personal Info */}
-        <div className="flex items-center justify-start gap-6 md:gap-16 mt-2 md:mt-4">
-          {/* Picture */}
+        <div className="flex items-center justify-start gap-6 md:gap-16 pt-14 md:pt-32">
+          {/* Picture + Greeting + Arrow (sab picture ke relative) */}
           <motion.div
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.2 }}
             className="relative shrink-0 h-[120px] w-[100px] md:h-[270px] md:w-[220px]"
           >
+            <h2 className="absolute bottom-full left-0 mb-9 md:mb-[75px] whitespace-nowrap font-hero tracking-wide text-sm md:text-3xl z-20">
+              Hello! I Am <span className="text-purple-600 pl-2">Muhammad Talha</span>
+            </h2>
+
+            <img
+              src={Arrow}
+              alt="Arrow"
+              className="absolute bottom-full left-full ml-1 md:ml-2 mb-1 md:mb-2 h-[25px] w-[45px] md:h-[60px] md:w-[100px] z-20"
+            />
+
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[160%] blur-2xl opacity-90 z-0 bg-[radial-gradient(circle,#d9c9f5_0%,#7c4dcc_20%,#3b1280_45%,transparent_70%)]"></div>
             <img src={Picture} className="relative z-10 w-full h-full object-cover" alt="profile" />
           </motion.div>
