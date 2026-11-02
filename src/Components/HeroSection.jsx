@@ -22,27 +22,27 @@ const HeroSection = () => {
   return (
     <div
       id="Home"
-      className="relative overflow-x-clip text-white flex flex-col items-center flex-1 w-full  px-4 md:px-8 py-6 md:py-12"
+      className="relative overflow-x-clip text-white flex flex-col items-center flex-1 w-full  px-4 md:px-8 py-15 mt-[10%] md:mt-0 md:py-12"
     >
       <div className="w-full max-w-[860px] mx-auto">
         {/* Personal Info */}
-        <div className="flex items-center justify-start gap-6 md:gap-16 pt-14 md:pt-36">
+        <div className="flex flex-col md:flex-row items-center justify-start gap-6 md:gap-16 pt-14 md:pt-36">
           
           <motion.div
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.2 }}
-            className="relative shrink-0 h-[120px] w-[100px] md:h-[270px] md:w-[220px]"
+            className="relative shrink-0 h-[200px] w-[165px] md:h-[270px] md:w-[220px]"
           >
             
             <div className="absolute bottom-full left-0 w-full  md:mb-2 flex flex-col z-20">
-              <h2 className="whitespace-nowrap font-hero ml-[135%] tracking-wide text-sm md:text-3xl">
+              <h2 className="whitespace-nowrap font-hero -translate-x-[30%] md:translate-x-0 md:mb-0 mb-[28%]  md:ml-[135%] tracking-wide text-xl md:text-3xl">
                 Hello! I Am <span className="text-purple-600 pl-2">Muhammad Talha</span>
               </h2>
               <img
                 src={Arrow}
                 alt="Arrow"
-                className="ml-[80%] mb-[20%]  md:mt-2 h-[25px] w-[45px] md:h-[60px] md:w-[100px]"
+                className="ml-[80%] hidden md:flex mb-[20%]  md:mt-2 h-[25px] w-[45px] md:h-[60px] md:w-[100px]"
               />
             </div>
 
@@ -56,19 +56,20 @@ const HeroSection = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.2 }}
-            className="flex flex-col justify-center gap-1 md:gap-4 flex-1 min-w-0 max-w-[560px]"
+            className="flex flex-col items-center text-center md:items-start md:text-left justify-center md:mt-0 mt-[15%] gap-1 md:gap-4 flex-1 min-w-0 max-w-[560px] mx-auto md:mx-0"
           >
-            <motion.p variants={item} className="font-hero text-xs md:text-4xl">
+            <motion.p variants={item} className="font-hero text-xl md:text-4xl">
               A Developer who
             </motion.p>
-            <motion.h1 variants={item} className="font-hero text-lg md:text-5xl lg:text-6xl break-words">
+            <motion.h1 variants={item} className="font-hero text-3xl md:text-5xl lg:text-6xl break-words">
               Codes both sides of the screen...
             </motion.h1>
-            <motion.p variants={item} className="font-hero text-xs md:text-4xl">
+            <motion.p variants={item} className="font-hero break-words text-xl md:text-4xl">
               Because looks and logic belong together.
+              
             </motion.p>
 
-            <motion.div variants={item} className="grid grid-cols-2 gap-1.5 md:gap-4 pt-2 w-full max-w-[360px]">
+            <motion.div variants={item}  className="grid grid-cols-2 gap-1.5 md:gap-4 pt-2 w-full max-w-[360px] mx-auto md:mx-0">
               <a
                 href="#Experience"
                 className="md:h-13 h-6 text-xs border hover:bg-purple-600 cursor-pointer flex items-center justify-center whitespace-nowrap rounded-xl border-purple-600 shadow-[inset_0_0_10px_rgba(168,85,247,0.6),0_0_12px_rgba(168,85,247,0.4)] font-hero md:text-xl bg-purple-500 gap-1 md:gap-2 text-purple-200"
@@ -93,7 +94,7 @@ const HeroSection = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.2 }}
-          className="flex flex-col items-start mt-10 md:mt-24 gap-2 md:gap-4 mx-auto max-w-3xl"
+          className="flex flex-col items-start md:p-0 p-10 mt-2 md:mt-24 gap-2 md:gap-4 mx-auto max-w-3xl"
         >
           <motion.h1 variants={item} className="font-hero md:text-5xl text-2xl tracking-wider">
             A Full-Stack Developer !

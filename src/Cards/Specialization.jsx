@@ -27,7 +27,7 @@ const Specialization = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.1 }}
-      className='w-full max-w-[920px] mx-auto mb-10 flex p-5 gap-2 md:gap-3 md:p-15 flex-1 flex-col'
+      className='w-full max-w-[920px] mx-auto mb-10 flex p-10 gap-2 md:gap-3 md:p-15 flex-1 flex-col'
     >
         <motion.h3 variants={item} className='font-hero text-violet-400  uppercase text-xs tracking-widest md:text-2xl'>Specialization</motion.h3>
         <motion.h1 variants={item} className='text-white tracking-widest text-2xl md:text-4xl font-hero'>Full-Stack Developer</motion.h1>
