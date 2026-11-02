@@ -47,7 +47,7 @@ const SkillsSection = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.1 }}
-      className='flex  flex-col justify-center items-center flex-1  w-full mt-10 md:mt-20'
+      className='flex  flex-col justify-center items-center flex-1   w-full mt-10 md:mt-20'
     >
       <motion.h1 variants={item} className='md:text-6xl text-3xl tracking-wider text-white font-hero'>
         Skills <span className='text-purple-400'>&</span> Technologies

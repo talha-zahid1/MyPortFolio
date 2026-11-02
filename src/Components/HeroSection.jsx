@@ -22,7 +22,7 @@ const HeroSection = () => {
   return (
     <div
       id="Home"
-      className="relative overflow-x-clip text-white flex flex-col items-center flex-1 w-full bg-[#0f0518] px-4 md:px-8 py-6 md:py-12"
+      className="relative overflow-x-clip text-white flex flex-col items-center flex-1 w-full  px-4 md:px-8 py-6 md:py-12"
     >
       <div className="w-full max-w-[860px] mx-auto">
         {/* Personal Info */}
@@ -106,7 +106,7 @@ const HeroSection = () => {
             className="h-px w-full md:mt-3 my-2 md:opacity-35 opacity-30 bg-purple-400 origin-left"
           ></motion.div>
           <motion.div variants={item} className="flex gap-2 md:gap-3 md:items-center">
-            <GraduationCap className="text-purple-400 md:mt-0 mt-3 shrink-0 w-5 h-5 md:w-8 md:h-8" />
+            <GraduationCap className="text-purple-400  shrink-0 w-5 h-5 md:w-8 md:h-8" />
             <p className="font-hero text-purple-400 text-sm md:text-2xl">
               A 3rd-year Software Engineering Student
               <span className="inline-flex items-center align-middle whitespace-nowrap">
