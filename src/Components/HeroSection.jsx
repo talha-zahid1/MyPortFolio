@@ -24,13 +24,13 @@ const HeroSection = () => {
       id="Home"
       className="relative overflow-x-clip text-white flex flex-col items-center flex-1 w-full bg-[#0f0518] px-4 md:px-8 py-6 md:py-12"
     >
-      <div className="w-full max-w-6xl">
+      <div className="w-full max-w-[860px]">
         {/* Greeting + Arrow */}
         <motion.h2
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.2 }}
-          className="font-hero tracking-wide text-sm md:text-3xl flex justify-start md:justify-center md:-ml-40"
+          className="font-hero tracking-wide text-sm md:text-3xl flex justify-start"
         >
           Hello! I Am <span className="text-purple-600 pl-2">Muhammad Talha</span>
         </motion.h2>
@@ -39,13 +39,13 @@ const HeroSection = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.2 }}
-          className="ml-24 md:ml-[48%] mt-1 md:mt-2 h-[25px] w-[45px] md:h-[60px] md:w-[100px]"
+          className="ml-[80px] md:ml-[215px] mt-1 md:mt-2 h-[25px] w-[45px] md:h-[60px] md:w-[100px]"
           src={Arrow}
           alt="Arrow"
         />
 
         {/* Personal Info */}
-        <div className="flex items-center justify-center gap-6 md:gap-16 mt-2 md:mt-4">
+        <div className="flex items-center justify-start gap-6 md:gap-16 mt-2 md:mt-4">
           {/* Picture */}
           <motion.div
             initial="hidden"
